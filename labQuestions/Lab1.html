@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1</title>
+</head>
+
+<body>
+    <h2>Registration form</h2>
+    <form>
+        <label for="Rname">Name: </label>
+        <input type="text" placeholder="Enter your name" maxlength="25" required><br><br>
+        <label for="Remail">Email: </label>
+        <input type="email" value="test@example.com" required autofocus><br><br> 
+        <label for="Rpassword">Password: </label>
+        <input type="password" minlength="6" required><br><br>
+        <label for="Dropdown">Category: </label>
+        <select name="Dropdown" id="Dropdown" required>
+            <option value="Student">Student</option>
+            <option value="Employee">Employee</option>
+            <option value="Freelancer" selected>Freelancer</option>
+        </select><br><br>
+        <label for="eventdate">Event Date:</label>
+        <input type="date" required><br><br>
+        <label for="Ticket">Ticket:</label>
+        <input type="radio" name="Ticket" id="ticket1">Ticket1 
+        <input type="radio" name="Ticket" id="Ticket2" checked>Ticket2
+        <input type="radio" name="Ticket" id="Ticket3">Ticket3
+        <br><br>
+        <label for="Payment">Payment:</label>
+         <input type="checkbox" required>online Payment <br><br>
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes" rows="2" cols="25" placeholder="Enter Notes"></textarea>
+
+        <br><br><input type="submit">
+
+    </form>
+</body>
+
+</html>
