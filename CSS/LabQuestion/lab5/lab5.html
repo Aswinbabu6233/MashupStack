@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .black {
+            width: 50%;
+            height: 40rem;
+            background-color: black;
+        }
+
+        .green {
+            width: 50%;
+            height: 40rem;
+            background-color: green;
+            align-content: center;
+            padding-left: 3rem;
+        }
+
+        .registersession {
+            padding: 20px;
+            color: white;
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            height: 55px;
+            width: 160px;
+            align-content: space-evenly;
+        }
+
+        .bi {
+            font-size: 45px;
+        }
+
+        .european {
+            font-size: 13px;
+            margin-left: 8px;
+            text-transform: uppercase;
+        }
+
+        .mainsession {
+            padding-top: 40px;
+        }
+
+        .Welcome {
+            font-size: 35px;
+            font-weight: 200;
+        }
+
+        .registererc {
+            font-size: 30px;
+            font-weight: 200;
+            color: rgb(123, 120, 120);
+        }
+
+        .content {
+            font-size: 15px;
+            font-weight: 200;
+            color: rgb(123, 120, 120);
+        }
+
+        .registerhere {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 200;
+            margin-top: 20px;
+        }
+
+        .footer {
+            display: flex;
+            gap: 3rem;
+            justify-content: start;
+            margin-top: 15%;
+            padding-right: 25px;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 200;
+            color: rgb(123, 120, 120);
+        }
+
+        .login {
+            font-size: 25px;
+            font-weight: 200;
+            color: white;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        form {
+            display: flex;
+
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+
+        }
+
+        .Email {
+            margin-right: 20%;
+            background-color: green;
+            color: white;
+            padding: 10px ;
+            border-color: white;
+            border-width: 0 0 2px 0;
+            
+        }
+
+        
+
+        input::placeholder {
+            color: white;
+        }
+        .btnsession{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+            height: 50px;
+        }
+        
+        .loginbtn {
+            padding: 6px;
+            background-color: white;
+            color: green;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 200;
+            width: 100px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="black">
+            <div class="registersession">
+                <div class="head">
+                    <i class="bi bi-lungs-fill"></i>
+                    <p class="european">european resuscitation council</p>
+                </div>
+                <div class="mainsession">
+                    <p class="Welcome">Welcome</p>
+                    <p class="registererc">Register for an ERC account here</p>
+                    <p class="content">Register for a free ERC account here and access to the webshop, academy and MyERC
+                        membershio. portal Tempor inciddent Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis eos, vel soluta porro, commodi, eaque quasi quia delectus recusandae facilis iste.
+                        Veritatis temporibus facere exercitationem sapiente, aspernatur voluptatum illum ratione?</p>
+                    <button class="registerhere" type="button"> Register Here</button>
+                </div>
+                <div class="footer">
+                    <p>choose language</p>
+                    <p>help center</p>
+                    <p>ERC website</p>
+                    <p>ERC webshop</p>
+                </div>
+            </div>
+        </div>
+        <div class="green">
+            <p class="login">Or login to you account</p>
+            <form class="loginform">
+                <input class="Email" type="text" placeholder="Email"><br>
+                <input class="Email" type="password" placeholder="Password">
+              
+                <div class="btnsession"> 
+                    <button class="loginbtn" type="submit">Login</button>
+                    <P><a href="">Forget password?</a></P>
+                </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

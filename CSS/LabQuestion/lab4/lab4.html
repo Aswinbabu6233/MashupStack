@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .border {
+            border: 4px groove #000;
+            margin: 0 auto;
+            width: 750px;
+            padding: 30px 10px;
+        }
+        p{
+            font-size: 14px;
+
+        }
+
+        .first {
+            display: flex;
+            height: 20px;
+            width: 130px;
+            justify-content: space-around;
+            ;
+            align-items: center;
+        }
+
+        #Customer {
+            font-weight: 300;
+            font-size: 26px;
+        }
+
+        #Details {
+            font-weight: 600;
+
+        }
+
+        .hearder {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .table {
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th,
+        table td {
+            border: 1px solid rgb(219, 214, 214);
+            padding: 5px;
+            text-align: left;
+        }
+        table th{
+            font-weight: 700;
+        }
+        table td{
+            font-size: 14px;
+        }
+       
+        button.view{
+            color: rgb(0, 149, 255);
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button.edit{
+            color: orange;background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button.delete{
+color: red;background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        button.Previous{
+            background-color: rgb(236, 236, 236);
+            padding: 5px 9px;
+            border: none;
+            cursor: pointer;
+        }
+        button.numb{
+            background-color: rgb(236, 236, 236);
+            padding: 5px 9px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        }
+        button.nmbrblue{
+            background-color: rgb(0, 149, 255);
+            padding: 5px 9px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border">
+        <div class="hearder">
+            <div class="first">
+                <p>show</p>
+                <div class="dropdown"><select name="show" id="show">
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select></div>
+                <p>entries</p>
+            </div>
+            <p id="Customer">Customer <span id="Details">Details</span></p>
+            <div class="search"><input type="text" placeholder="search"></div>
+        </div>
+        <div class="table">
+            <table>
+
+                <tr>
+                    <th>#</th>
+                    <th>Name <i class="fa-solid fa-sort"></i></th>
+                    <th>Address</th>
+                    <th>City <i class="fa-solid fa-sort"></i></th>
+                    <th>Pincode</th>
+                    <th>Country <i class="fa-solid fa-sort"></i></th>
+                    <th>Actions</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Thomas Hardy</td>
+                    <td>89 Chiarosc Rd.</td>
+                    <td>Portland</td>
+                    <td>91219</td>
+                    <td>USA</td>
+                    <td>
+                        <button class="view"><i class="fa-solid fa-eye"></i></button>
+                        <button class="edit"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="delete"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Anders</td>
+                    <td>Obere Str.57</td>
+                    <td>Berlin</td>
+                    <td>12209</td>
+                    <td>Germany</td>
+                    <td>
+                        <button class="view"><i class="fa-solid fa-eye"></i></button>
+                        <button class="edit"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="delete"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Fran Wilson</td>
+                    <td>C/Araquil, 67</td>
+                    <td>Madrid</td>
+                    <td>28023</td>
+                    <td>Spain</td>
+                    <td>
+                        <button class="view"><i class="fa-solid fa-eye"></i></button>
+                        <button class="edit"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="delete"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dominic Perrier</td>
+                    <td>25, rue Lauriston</td>
+                    <td>Paris</td>
+                    <td>75016</td>
+                    <td>France</td>
+                    <td>
+                        <button class="view"><i class="fa-solid fa-eye"></i></button>
+                        <button class="edit"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="delete"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Martin Blank</td>
+                    <td>Via Monteblanco 34</td>
+                    <td>Turin</td>
+                    <td>10100</td>
+                    <td>Italy</td>
+                    <td>
+                        <button class="view"><i class="fa-solid fa-eye"></i></button>
+                        <button class="edit"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="delete"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+            </table>
+      
+        </div>
+        <div class="footer">
+            <p>Showing 5 out of 25 entries</p>
+
+            <div>
+                <button class="Previous" type="button">Previous</button>
+                <button class="numb" type="button">1</button>
+                <button class="numb" type="button">2</button>
+                <button class="nmbrblue" type="button">3</button>
+                <button class="numb" type="button">4</button>
+                <button class="numb" type="button">5</button>
+                <button class="Previous" type="button">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
